@@ -2,14 +2,17 @@
     "files.associations": {
         "stdio.h": "c",
         "stdlib.h": "c",
-        "math.h": "c",
+        "string.h": "c",
         "__locale": "c",
-        "locale": "c",
         "ios": "c",
-        "queue": "c",
-        "stack": "c",
+        "ctype.h": "c",
+        "queue": "cpp",
+        "stack": "cpp",
+        "array": "c",
         "complex": "c",
         "memory": "c",
+        "istream": "c",
+        "locale": "c",
         "variant": "c"
     }
 }

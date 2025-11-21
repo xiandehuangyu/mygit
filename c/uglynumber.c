@@ -4,12 +4,14 @@ int main(void){
     int ugly[1000]={1};
     int count=1;
     for(int i=2;i<2000;i++){
-    if(i%2==0||i%3==0||i%5==0)
+    if(i%2==0||i%3==0||i%5==0){
         if(isUgly(i)){
-            ugly[count++]=i;
+            ugly[count]=i;
+            count++;
         }
     }
     printf("%d",ugly[100-1]);
+}
 }
 int isUgly(int num){
     while(num%2==0)num/=2;
