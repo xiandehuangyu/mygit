@@ -13,6 +13,24 @@
         "memory": "c",
         "istream": "c",
         "locale": "c",
-        "variant": "c"
+        "variant": "c",
+        "booksystem.h": "c",
+        "bitset": "c",
+        "unordered_map": "c",
+        "__bit_reference": "c",
+        "__node_handle": "c",
+        "optional": "c",
+        "sstream": "c",
+        "streambuf": "c",
+        "string_view": "c",
+        "vector": "c",
+        "__hash_table": "c",
+        "__split_buffer": "c",
+        "deque": "c",
+        "initializer_list": "c",
+        "string": "c",
+        "galsystem.h": "c",
+        "typeinfo": "c",
+        "stdbool.h": "c"
     }
 }
