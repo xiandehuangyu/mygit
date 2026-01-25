@@ -1,8 +1,9 @@
 {
+    "version": "2.0.0",
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: clang 生成活动文件",
+            "label": "C编译任务", 
             "command": "/usr/bin/clang",
             "args": [
                 "-fcolor-diagnostics",
@@ -22,8 +23,7 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "detail": "调试器生成的任务。"
+            "detail": "使用clang编译器生成可执行文件"
         }
-    ],
-    "version": "2.0.0"
+    ]
 }
