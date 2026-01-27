@@ -2,13 +2,24 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "C语言调试",
+            "name": "C++ 调试 (CodeLLDB)",
+            "type": "lldb",           // 使用安装的 CodeLLDB 扩展
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "cwd": "${fileDirname}",
+            "preLaunchTask": "C/C++: clang++ 生成活动文件", // 对应 tasks.json 的 label
+            "stdio": null,            // 默认就在集成终端输入输出
+            "terminal": "integrated"  // 强制使用 VS Code 内部终端
+        },
+        {
+            "name": "C 调试 (CodeLLDB)",
             "type": "lldb",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
             "args": [],
-            "cwd": "${workspaceFolder}",
-            "preLaunchTask": "C编译任务",
+            "cwd": "${fileDirname}",
+            "preLaunchTask": "C/C++: clang 生成活动文件",
             "terminal": "integrated"
         }
     ]

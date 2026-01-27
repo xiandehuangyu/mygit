@@ -3,7 +3,33 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C编译任务", 
+            "label": "C/C++: clang++ 生成活动文件", // 必须和 launch.json 里的 preLaunchTask 一致
+            "command": "/usr/bin/clang++",
+            "args": [
+                "-std=c++17",        // 建议增加：使用 C++17 标准
+                "-fcolor-diagnostics",
+                "-fansi-escape-codes",
+                "-g",                // 必须有：生成调试信息
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent", // 编译成功时不自动弹起终端
+                "panel": "shared",  // 共享面板
+                "close": true       // 编译成功后自动关闭该任务终端
+            }
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: clang 生成活动文件",
             "command": "/usr/bin/clang",
             "args": [
                 "-fcolor-diagnostics",
@@ -19,11 +45,12 @@
             "problemMatcher": [
                 "$gcc"
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "detail": "使用clang编译器生成可执行文件"
+            "group": "build",
+            "presentation": {
+                "reveal": "silent",
+                "panel": "shared",
+                "close": true
+            }
         }
     ]
 }
