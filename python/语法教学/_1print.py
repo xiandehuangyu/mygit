@@ -33,3 +33,10 @@ print("%5.2f %-10s %10s" % (c, a, b))#旧式格式化字符串,类c语言的prin
 # 补充，要在字符串里输出引号，可以用转义字符\，或者用另一种引号包裹
 print("He said, \"Hello!\"")
 print('He said, "Hello!"')
+# \t表示制表符，\n表示换行符，\r表示回车符, \b表示退格符
+print("Hello\tWorld!")#制表符会对齐到下一个制表位，通常为8个字符宽度
+print("Hello\nWorld!")
+print("Hello\rWorld!")#回车会将光标移到行首，覆盖前面的内容
+print("Hello\bWorld!")#退格会删除光标前一个字符
+# 原始字符串，不进行转义处理，在字符串前加r或R
+print(r"C:\Users\Name")
