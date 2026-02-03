@@ -4,7 +4,7 @@
 #def 函数名(参数1,参数2,...):
 #    函数体
 #    return 返回值
-#可以无参数，也可以无返回值
+#可以无参数，也可以无返回值,返回值也可以是多个,直接return多个值,用逗号隔开,但需要多个取接收
 #也可以写下函数说明，一般格式如下写在函数定义里下一行
 """
     :param 参数1: 参数1的说明
@@ -52,6 +52,24 @@ def erjinzhi(x):
     else:
         print(x,end="")
 erjinzhi(10)
+print()
+#特殊
+#函数也能作为参数传递
+def add_num(x,y):
+    return x+y
+def minus_num(x,y):
+    return x-y
+
+def print_num(func,x,y):
+    print(func(x,y))
+
+print_num(add_num,3,5)
+print_num(minus_num,3,5)
+#匿名函数
+#lambda表达式，可以用lambda关键字定义匿名函数，语法如下
+#lambda 参数1,参数2,...: 返回值
+print_num(lambda x,y:x+y,3,5)
+print_num(lambda x,y:x-y,3,5)
 #补充
 #*args和**kwargs，建议后面再来看
 #*args用于传递可变数量的位置参数，函数内部将其视为一个元组
