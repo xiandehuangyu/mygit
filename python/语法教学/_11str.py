@@ -24,7 +24,7 @@ print(e)
 #字符串='分割符'.join(列表)方法,将列表中的元素用分割符连接成一个字符串
 f=','.join(e)
 print(f)
-#字符串.strip()方法,去掉字符串两端的空格
+#字符串.strip()方法,去掉字符串两端的空格,换行符等
 text='  hello world  '
 print(text)
 g=text.strip()

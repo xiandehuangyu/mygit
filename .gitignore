@@ -5,6 +5,7 @@ temp/
 .venv/
 
 # 临时/日志/备份/编辑器缓存文件
+*.html
 *.tmp
 *.log
 *.bak
