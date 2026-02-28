@@ -11,5 +11,6 @@
         "complex": "c",
         "memory": "c",
         "variant": "c"
-    }
+    },
+    "python-envs.defaultEnvManager": "ms-python.python:system"
 }

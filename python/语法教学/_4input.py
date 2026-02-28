@@ -5,7 +5,7 @@ print(f"你输入的类型是: {type(k)}, 内容是: {k}")
 # 如果需要其他类型，可以进行类型转换
 
 #bool运算符：> < >= <= == !=
-#逻辑运算符：and or not
+#逻辑运算符：and(&) or(|) not(~)
 print(10 > 5 and 5 < 3) #True
 print(10 > 5 or 5 < 3) #True
 print(not 10 > 5) #False
